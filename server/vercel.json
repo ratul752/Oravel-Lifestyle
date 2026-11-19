@@ -1,0 +1,98 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "buildCommand": "node -e \"console.log('Oravel API ready')\"",
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/index?__oravel_path=health"
+    },
+    {
+      "source": "/api/config",
+      "destination": "/api/index?__oravel_path=config"
+    },
+    {
+      "source": "/api/assistant/chat",
+      "destination": "/api/index?__oravel_path=assistant/chat"
+    },
+    {
+      "source": "/api/assistant/test",
+      "destination": "/api/index?__oravel_path=assistant/test"
+    },
+    {
+      "source": "/api/admin/login",
+      "destination": "/api/index?__oravel_path=admin/login"
+    },
+    {
+      "source": "/api/admin/data",
+      "destination": "/api/index?__oravel_path=admin/data"
+    },
+    {
+      "source": "/api/admin/orders/update-status",
+      "destination": "/api/index?__oravel_path=admin/orders/update-status"
+    },
+    {
+      "source": "/api/auth/signup/request-code",
+      "destination": "/api/index?__oravel_path=auth/signup/request-code"
+    },
+    {
+      "source": "/api/auth/signup/verify",
+      "destination": "/api/index?__oravel_path=auth/signup/verify"
+    },
+    {
+      "source": "/api/auth/password/request-reset",
+      "destination": "/api/index?__oravel_path=auth/password/request-reset"
+    },
+    {
+      "source": "/api/auth/password/reset",
+      "destination": "/api/index?__oravel_path=auth/password/reset"
+    },
+    {
+      "source": "/api/auth/signup",
+      "destination": "/api/index?__oravel_path=auth/signup"
+    },
+    {
+      "source": "/api/auth/login",
+      "destination": "/api/index?__oravel_path=auth/login"
+    },
+    {
+      "source": "/api/contact",
+      "destination": "/api/index?__oravel_path=contact"
+    },
+    {
+      "source": "/api/newsletter",
+      "destination": "/api/index?__oravel_path=newsletter"
+    },
+    {
+      "source": "/api/track",
+      "destination": "/api/index?__oravel_path=track"
+    },
+    {
+      "source": "/api/account/orders",
+      "destination": "/api/index?__oravel_path=account/orders"
+    },
+    {
+      "source": "/api/orders/create",
+      "destination": "/api/index?__oravel_path=orders/create"
+    },
+    {
+      "source": "/api/admin/export/:id",
+      "destination": "/api/index?__oravel_path=admin/export/:id"
+    },
+    {
+      "source": "/api/account/orders/:id",
+      "destination": "/api/index?__oravel_path=account/orders/:id"
+    },
+    {
+      "source": "/api/orders/:id",
+      "destination": "/api/index?__oravel_path=orders/:id"
+    }
+  ],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "catalog.js",
+      "maxDuration": 60
+    }
+  }
+}

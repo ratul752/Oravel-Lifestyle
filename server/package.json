@@ -1,0 +1,19 @@
+{
+  "name": "oravel-lifestyle-cod-store",
+  "version": "2.0.0",
+  "description": "Oravel Lifestyle COD ecommerce with MongoDB Atlas, OTP and admin dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --require ./mongo-dns.cjs server.js",
+    "dev": "node --require ./mongo-dns.cjs server.js",
+    "test:db": "node --require ./mongo-dns.cjs test-db.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mongodb": "^6.21.0",
+    "nodemailer": "^10.6.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
