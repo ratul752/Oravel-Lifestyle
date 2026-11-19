@@ -1,4 +1,4 @@
-# Oravel Lifestyle 2.0 — separated client and server
+# Oravel Lifestyle 
 
 This release is based on the previously delivered MongoDB edition. The storefront, styling, COD checkout, account flows, order tracking, admin dashboard, WhatsApp and optional assistant are retained. The source pages are JavaScript templates, not standalone HTML files. This is a lightweight Node build, not a React/Next.js migration.
 
